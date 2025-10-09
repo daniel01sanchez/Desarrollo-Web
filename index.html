@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaniFruit - Frutas Frescas</title>
+
+    <link rel="icon" type="image/x-icon" href="./comp_icon/favicon.ico">
+
+
+    <!-- Bootstrap 5 -->
+    <link href="./css/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./css/miestilo.css">
+
+    <!-- Íconos de Bootstrap para Redes Sociales -->
+    <link href="./icons/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header class="bg-success text-white text-center py-4">
+        <h1>DaniFruit</h1>
+        <p>¡Frutas frescas directo del campo a tu mesa!</p>
+        <div class="d-flex justify-content-center gap-4 mt-3">
+            <a href="https://www.facebook.com/DaniFruitOficial" target="_blank" class="text-white fs-4">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/DaniFruitOficial"        target="_blank" class="text-white fs-4">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/573001234567" target="_blank"        class="text-white fs-4">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="d-flex align-items-center text-white">
+                    <i class="bi bi-envelope me-2"></i>
+                    <span class="me-4">danifruit@gmail.com</span>
+                    <i class="bi bi-telephone me-2"></i>
+                    <span>+57 3023055050</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="inicio" class="container my-5">
+
+        <!-- Sección de bienvenida -->
+        <section class="text-center mb-5">
+            <h2>Bienvenido a DaniFruit</h2>
+            <p>Disfruta de nuestras frutas seleccionadas, con frescura y sabor garantizado.</p>
+            <audio controls>
+                <source src="audio/audio_dw.m4a" type="audio/mp4">
+            </audio>
+
+        </section>
+
+        <!-- Productos -->
+        <section id="productos" class="mb-5">
+            <h2 class="text-success text-center mb-4">Nuestros Productos</h2>
+
+            <!-- Tabla de productos -->
+            <table class="table table-bordered table-striped text-center">
+                <thead class="table-success">
+                    <tr>
+                        <th>Fruta</th>
+                        <th>Precio (kg)</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Manzana</td><td>$4.000</td><td>Disponible</td></tr>
+                    <tr><td>Mango</td><td>$3.500</td><td>Disponible</td></tr>
+                    <tr><td>Mora</td><td>$2.800</td><td>No Disponible</td></tr>
+                    <tr><td>Banano</td><td>$2.000</td><td>Disponible</td></tr>
+                    <tr><td>Naranja</td><td>$3.000</td><td>Disponible</td></tr>
+                    <tr><td>Durazno</td><td>$5.500</td><td>No Disponible</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section id="galeria" class="text-center mb-5">
+            <h2 class="text-success mb-4">Galería de Frutas</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3"><img src="./img/frutas1.jpg" alt="Imágenes de Frutas N°1" class="img-fluid rounded img-borde"></div>
+                <div class="col-md-4 mb-3"><img src="./img/frutas2.jpg" alt="Imágenes de Frutas N°2" class="img-fluid rounded img-borde"></div>
+                <div class="col-md-4 mb-3"><img src="./img/frutas3.jpg" alt="Imágenes de Frutas N°3" class="img-fluid rounded img-borde"></div>
+            </div>
+            <h2 class="text-success mb-4">Frescura que se nota!</h2>
+            <video controls width="700">
+                <source src="./vid/video_de_frutas.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-success text-center mb-4">Contáctanos</h2>
+            <form class="col-md-6 mx-auto bg-light p-4 rounded shadow">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre y Apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe tu nombre" required autocomplete="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required autocomplete="email">
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de pedido:</label>
+                    <input type="date" id="fecha" name="fecha" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Escribe tu ciudad de residencia" required>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Escribe tu dirección completa" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje o pedido:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" rows="3" placeholder="Escribe tu pedido aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Lista de valores -->
+        <aside class="text-center mt-5">
+            <h3>Nuestros valores 🍏</h3>
+            <ul class="list-unstyled">
+                <li>✅ Frescura 100%</li>
+                <li>⚡ Entrega rápida</li>
+                <li>🏆 Calidad certificada</li>
+                <li>💎 Sabor premium</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 DaniFruit - Todos los derechos reservados</p>
+        <a href="#inicio" class="text-light">Volver arriba ↑</a>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="./js/js/bootstrap.min.js"></script>
+</body>
+</html>

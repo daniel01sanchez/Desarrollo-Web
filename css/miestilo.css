@@ -1,0 +1,46 @@
+/* Fondo general */
+body {
+    background-color: #f3fff3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado */
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Imágenes con borde */
+.img-borde {
+    border: 3px solid #198754;
+    transition: transform 0.3s ease;
+}
+
+.img-borde:hover {
+    transform: scale(1.05);
+}
+
+/* Tabla */
+table {
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formularios */
+form {
+    border: 2px solid #198754;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
