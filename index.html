@@ -1,168 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaniFruit - Frutas Frescas</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DaniFruit - Frutas Frescas</title>
 
-    <link rel="icon" type="image/x-icon" href="./comp_icon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./comp_icon/favicon.ico">
 
+        <!-- Bootstrap 5 -->
+        <link href="./css/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap 5 -->
-    <link href="./css/css/bootstrap.min.css" rel="stylesheet">
+        <!-- CSS externo -->
+        <link rel="stylesheet" href="./css/miestilo.css">
 
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="./css/miestilo.css">
+        <!-- Íconos de Bootstrap -->
+        <link href="./icons/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+    </head>
 
-    <!-- Íconos de Bootstrap para Redes Sociales -->
-    <link href="./icons/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+    <body>
+        <!-- Encabezado principal -->
+        <header class="bg-success text-white text-center py-4">
+            <h1>DaniFruit</h1>
+            <p>¡Frutas frescas directo del campo a tu mesa!</p>
+            <div class="d-flex justify-content-center gap-4 mt-3">
+                <a href="https://www.facebook.com/DaniFruitOficial" target="_blank" class="text-white fs-4">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/DaniFruitOficial" target="_blank" class="text-white fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/573137914541" target="_blank" class="text-white fs-4">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </header>
 
-</head>
-<body>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center text-white">
+                        <i class="bi bi-envelope me-2"></i>
+                        <span class="me-4">danifruit@gmail.com</span>
+                        <i class="bi bi-telephone me-2"></i>
+                        <span>+57 3023055050</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Encabezado principal -->
-    <header class="bg-success text-white text-center py-4">
-        <h1>DaniFruit</h1>
-        <p>¡Frutas frescas directo del campo a tu mesa!</p>
-        <div class="d-flex justify-content-center gap-4 mt-3">
-            <a href="https://www.facebook.com/DaniFruitOficial" target="_blank" class="text-white fs-4">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/DaniFruitOficial"        target="_blank" class="text-white fs-4">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://wa.me/573023055050" target="_blank"        class="text-white fs-4">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-        </div>
-    </header>
+        <!-- Contenido principal -->
+        <main id="inicio" class="container my-5">
+            <!-- Sección de bienvenida -->
+            <section class="text-center mb-5">
+                <h2>Bienvenido a DaniFruit</h2>
+                <p>Disfruta de nuestras frutas seleccionadas, con frescura y sabor garantizado.</p>
+                <audio controls>
+                    <source src="audio/audio_dw.m4a" type="audio/mp4">
+                </audio>
+            </section>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#inicio">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <!-- Productos -->
+            <section id="productos" class="mb-5">
+                <h2 class="text-success text-center mb-4">Nuestros Productos</h2>
+
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="table-success">
+                        <tr>
+                            <th>Fruta</th>
+                            <th>Precio (kg)</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Manzana</td><td>$4.000</td><td>Disponible</td></tr>
+                        <tr><td>Mango</td><td>$3.500</td><td>Disponible</td></tr>
+                        <tr><td>Mora</td><td>$2.800</td><td>No Disponible</td></tr>
+                        <tr><td>Banano</td><td>$2.000</td><td>Disponible</td></tr>
+                        <tr><td>Naranja</td><td>$3.000</td><td>Disponible</td></tr>
+                        <tr><td>Durazno</td><td>$5.500</td><td>No Disponible</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Galería -->
+            <section id="galeria" class="text-center mb-5">
+                <h2 class="text-success mb-4">Galería de Frutas</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3"><img src="./img/frutas1.jpg" alt="Imágenes de Frutas N°1" class="img-fluid rounded img-borde"></div>
+                    <div class="col-md-4 mb-3"><img src="./img/frutas2.jpg" alt="Imágenes de Frutas N°2" class="img-fluid rounded img-borde"></div>
+                    <div class="col-md-4 mb-3"><img src="./img/frutas3.jpg" alt="Imágenes de Frutas N°3" class="img-fluid rounded img-borde"></div>
+                </div>
+                <h2 class="text-success mb-4">¡Frescura que se nota!</h2>
+                <video controls width="700">
+                    <source src="./vid/video_de_frutas.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <!-- Formulario -->
+            <section id="contacto" class="mb-5">
+                <h2 class="text-success text-center mb-4">Contáctanos</h2>
+                <form class="col-md-6 mx-auto bg-light p-4 rounded shadow">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe tu nombre" required autocomplete="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required autocomplete="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha de pedido:</label>
+                        <input type="date" id="fecha" name="fecha" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ciudad" class="form-label">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" class="form-control" placeholder="Escribe tu ciudad de residencia" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Escribe tu dirección completa" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje o pedido:</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control" rows="3" placeholder="Escribe tu pedido aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                </form>
+            </section>
+
+            <!-- Valores -->
+            <aside class="text-center mt-5">
+                <h3>Nuestros valores 🍏</h3>
+                <ul class="list-unstyled">
+                    <li>✅ Frescura 100%</li>
+                    <li>⚡ Entrega rápida</li>
+                    <li>🏆 Calidad certificada</li>
+                    <li>💎 Sabor premium</li>
                 </ul>
-                <div class="d-flex align-items-center text-white">
-                    <i class="bi bi-envelope me-2"></i>
-                    <span class="me-4">danifruit@gmail.com</span>
-                    <i class="bi bi-telephone me-2"></i>
-                    <span>+57 3023055050</span>
-                </div>
-            </div>
-        </div>
-    </nav>
+            </aside>
+        </main>
 
-    <!-- Contenido principal -->
-    <main id="inicio" class="container my-5">
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2025 DaniFruit - Todos los derechos reservados</p>
+            <a href="#inicio" class="text-light">Volver arriba ↑</a>
+        </footer>
 
-        <!-- Sección de bienvenida -->
-        <section class="text-center mb-5">
-            <h2>Bienvenido a DaniFruit</h2>
-            <p>Disfruta de nuestras frutas seleccionadas, con frescura y sabor garantizado.</p>
-            <audio controls>
-                <source src="audio/audio_dw.m4a" type="audio/mp4">
-            </audio>
+        <!-- JS Bootstrap -->
+        <script src="./js/js/bootstrap.min.js"></script>
 
-        </section>
+        <!-- JS Personalizado -->
+        <script>
+            // =============== 1. Saludo inicial con alert y prompt ===============
+            alert("🍎 ¡Bienvenido a DaniFruit!");
 
-        <!-- Productos -->
-        <section id="productos" class="mb-5">
-            <h2 class="text-success text-center mb-4">Nuestros Productos</h2>
+            let nombreUsuario = prompt("¿Cuál es tu nombre?");
+            if (nombreUsuario && nombreUsuario.trim() !== "") {
+                alert("Hola " + nombreUsuario + ", gracias por visitar DaniFruit 🥭");
+            } else {
+                alert("Bienvenido visitante anónimo 🥝");
+            }
 
-            <!-- Tabla de productos -->
-            <table class="table table-bordered table-striped text-center">
-                <thead class="table-success">
-                    <tr>
-                        <th>Fruta</th>
-                        <th>Precio (kg)</th>
-                        <th>Disponibilidad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Manzana</td><td>$4.000</td><td>Disponible</td></tr>
-                    <tr><td>Mango</td><td>$3.500</td><td>Disponible</td></tr>
-                    <tr><td>Mora</td><td>$2.800</td><td>No Disponible</td></tr>
-                    <tr><td>Banano</td><td>$2.000</td><td>Disponible</td></tr>
-                    <tr><td>Naranja</td><td>$3.000</td><td>Disponible</td></tr>
-                    <tr><td>Durazno</td><td>$5.500</td><td>No Disponible</td></tr>
-                </tbody>
-            </table>
-        </section>
+            // =============== 2. Contador de visitas (operador de incremento) ===============
+            let visitas = localStorage.getItem("visitas") || 0;
+            visitas++;
+            localStorage.setItem("visitas", visitas);
+            console.log("Número de visitas: " + visitas);
 
-        <!-- Galería de imágenes -->
-        <section id="galeria" class="text-center mb-5">
-            <h2 class="text-success mb-4">Galería de Frutas</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3"><img src="./img/frutas1.jpg" alt="Imágenes de Frutas N°1" class="img-fluid rounded img-borde"></div>
-                <div class="col-md-4 mb-3"><img src="./img/frutas2.jpg" alt="Imágenes de Frutas N°2" class="img-fluid rounded img-borde"></div>
-                <div class="col-md-4 mb-3"><img src="./img/frutas3.jpg" alt="Imágenes de Frutas N°3" class="img-fluid rounded img-borde"></div>
-            </div>
-            <h2 class="text-success mb-4">Frescura que se nota!</h2>
-            <video controls width="700">
-                <source src="./vid/video_de_frutas.mp4" type="video/mp4">
-            </video>
-        </section>
+            if (visitas % 3 === 0) {
+                alert("Has visitado esta página " + visitas + " veces 🍊");
+            }
 
-        <!-- Formulario de contacto -->
-        <section id="contacto" class="mb-5">
-            <h2 class="text-success text-center mb-4">Contáctanos</h2>
-            <form class="col-md-6 mx-auto bg-light p-4 rounded shadow">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre y Apellidos:</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe tu nombre" required autocomplete="name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required autocomplete="email">
-                </div>
-                <div class="mb-3">
-                    <label for="fecha" class="form-label">Fecha de pedido:</label>
-                    <input type="date" id="fecha" name="fecha" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad" placeholder="Escribe tu ciudad de residencia" required>
-                </div>
-                <div class="mb-3">
-                    <label for="direccion" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" id="direccion" placeholder="Escribe tu dirección completa" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje o pedido:</label>
-                    <textarea id="mensaje" name="mensaje" class="form-control" rows="3" placeholder="Escribe tu pedido aquí..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-success w-100">Enviar</button>
-            </form>
-        </section>
+            // =============== 3. Comprobación de disponibilidad ===============
+            let productos = document.querySelectorAll("table tbody tr");
 
-        <!-- Lista de valores -->
-        <aside class="text-center mt-5">
-            <h3>Nuestros valores 🍏</h3>
-            <ul class="list-unstyled">
-                <li>✅ Frescura 100%</li>
-                <li>⚡ Entrega rápida</li>
-                <li>🏆 Calidad certificada</li>
-                <li>💎 Sabor premium</li>
-            </ul>
-        </aside>
+            for (let i = 0; i < productos.length; i++) {
+                let disponibilidad = productos[i].children[2].textContent;
+                if (disponibilidad == "No Disponible") {
+                    productos[i].style.backgroundColor = "#ffd6d6";
+                    productos[i].title = "Producto agotado temporalmente 🍓";
+                } else if (disponibilidad == "Disponible") {
+                    productos[i].style.backgroundColor = "#d6ffd6";
+                }
+            }
 
-    </main>
+            // =============== 4. Validación del formulario con función e if...else ===============
+            const form = document.querySelector("form");
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 DaniFruit - Todos los derechos reservados</p>
-        <a href="#inicio" class="text-light">Volver arriba ↑</a>
-    </footer>
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                validarFormulario();
+            });
 
-    <!-- JS Bootstrap -->
-    <script src="./js/js/bootstrap.min.js"></script>
-</body>
+            function validarFormulario() {
+                let nombre = document.getElementById("nombre").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let ciudad = document.getElementById("ciudad").value.trim();
+                let mensaje = document.getElementById("mensaje").value.trim();
+
+                if (nombre === "" || email === "" || ciudad === "") {
+                    alert("⚠️ Por favor, completa todos los campos obligatorios.");
+                    return;
+                }
+
+                // Simulación de procesamiento (while y break)
+                let progreso = 0;
+                while (progreso <= 100) {
+                    progreso += 20;
+                    console.log("Procesando pedido... " + progreso + "%");
+                    if (progreso >= 100) {
+                        break;
+                    }
+                }
+
+                let confirmar = confirm("¿Deseas enviar tu pedido ahora?");
+                if (confirmar) {
+                    alert("✅ Pedido enviado con éxito. ¡Gracias por comprar en DaniFruit!");
+                    form.reset();
+                } else {
+                    alert("Tu pedido no fue enviado. Puedes modificarlo antes de enviarlo 🍉");
+                }
+            }
+
+            // =============== 5. Efecto interactivo en imágenes ===============
+            let imagenes = document.querySelectorAll(".img-borde");
+            for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].addEventListener("click", function() {
+                    imagenes[i].style.transform = "rotate(5deg)";
+                    setTimeout(() => {
+                        imagenes[i].style.transform = "scale(1.05)";
+                    }, 400);
+                });
+            }
+        </script>
+    </body>
 </html>
